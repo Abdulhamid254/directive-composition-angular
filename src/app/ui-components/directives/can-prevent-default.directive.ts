@@ -1,0 +1,35 @@
+import { Directive, HostListener, inject } from '@angular/core';
+import { CanDisableDirective } from './can-disable.directive';
+
+@Directive({
+  selector: '[appCanPreventDefault]',
+  standalone: true
+})
+export class CanPreventDefaultDirective {
+
+   // using dependancy injection the  canPreventDefaultDirective can be able to read the value/state of canDisableDirecetive
+     canDisableDir = inject(CanDisableDirective);
+
+     // depending on the fitting use cases we can make the injected directive it optional
+    //  {
+    //   optional: true
+    //  }
+
+  @HostListener('click', ['$event'])
+  @HostListener('dbclick', ['$event'])
+  onClick(e: Event) {
+    if (this.canDisableDir.disabled) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+    }
+
+    console.log(e.defaultPrevented);
+
+  }
+
+  // constructor() {
+  //   console.log(this.canDisableDir);
+
+  // }
+
+}
