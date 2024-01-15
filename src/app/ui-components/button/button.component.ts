@@ -5,9 +5,9 @@ import {
   HostListener,
   Input,
 } from '@angular/core';
-import { CanColorDirective } from '../directives/can-color.directive';
-import { CanDisableDirective } from '../directives/can-disable.directive';
-import { CanAppearanceDirective } from '../directives/can-appearance.directive';
+import { CanColorDirective } from '../../directives/can-color.directive';
+import { CanDisableDirective } from '../../directives/can-disable.directive';
+import { CanAppearanceDirective } from '../../directives/can-appearance.directive';
 
 @Component({
   selector: 'button[dfButton], a[dfButton]',

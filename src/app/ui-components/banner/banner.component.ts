@@ -4,8 +4,8 @@ import {
   HostBinding,
   Input,
 } from '@angular/core';
-import { CanAppearanceDirective } from '../directives/can-appearance.directive';
-import { CanColorDirective } from '../directives/can-color.directive';
+import { CanAppearanceDirective } from '../../directives/can-appearance.directive';
+import { CanColorDirective } from '../../directives/can-color.directive';
 
 
 @Component({

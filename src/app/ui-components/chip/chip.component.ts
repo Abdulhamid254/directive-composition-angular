@@ -8,9 +8,9 @@ import {
   Output,
 } from '@angular/core';
 import { CommonModule, NgIf } from '@angular/common';
-import { CanAppearanceDirective } from '../directives/can-appearance.directive';
-import { CanColorDirective } from '../directives/can-color.directive';
-import { CanDisableDirective } from '../directives/can-disable.directive';
+import { CanAppearanceDirective } from '../../directives/can-appearance.directive';
+import { CanColorDirective } from '../../directives/can-color.directive';
+import { CanDisableDirective } from '../../directives/can-disable.directive';
 
 @Component({
   selector: 'app-chip',
